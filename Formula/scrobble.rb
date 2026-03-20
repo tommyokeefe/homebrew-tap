@@ -5,20 +5,20 @@
 class Scrobble < Formula
   desc "Scrobble albums from Discogs to Last.fm from the command line."
   homepage "https://github.com/tommyokeefe/cli-scrobbler"
-  version "0.2.1"
+  version "0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tommyokeefe/cli-scrobbler/releases/download/0.2.1/scrobble_0.2.1_darwin_amd64.tar.gz"
-      sha256 "7fc77d0aa71a962c04ecff2f041fd5e48bfa63120f8c1f44ad6930b8eb7a62f3"
+      url "https://github.com/tommyokeefe/cli-scrobbler/releases/download/0.3/scrobble_0.3_darwin_amd64.tar.gz"
+      sha256 "eb3b791e4fbeccabfd6514c1e7caa328e04cc9b74d4b001844d97fc43a6aafdf"
 
       define_method(:install) do
         bin.install "scrobble"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tommyokeefe/cli-scrobbler/releases/download/0.2.1/scrobble_0.2.1_darwin_arm64.tar.gz"
-      sha256 "0c15dd21be32212e0e65e90ba2feef0a27236d4aa8aaee0d773dcd1dac6f2a8d"
+      url "https://github.com/tommyokeefe/cli-scrobbler/releases/download/0.3/scrobble_0.3_darwin_arm64.tar.gz"
+      sha256 "cf76112edaea0eebe67e793c29eaaa7c22efeab7cc8c778ab59fbd1825606374"
 
       define_method(:install) do
         bin.install "scrobble"
@@ -28,15 +28,15 @@ class Scrobble < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tommyokeefe/cli-scrobbler/releases/download/0.2.1/scrobble_0.2.1_linux_amd64.tar.gz"
-      sha256 "33a291152ad8286461641ab1571ba244b1f1df4ecd084a58f782dcfd48f0e728"
+      url "https://github.com/tommyokeefe/cli-scrobbler/releases/download/0.3/scrobble_0.3_linux_amd64.tar.gz"
+      sha256 "c8bc8f9f05ff5571798aec80ad31343841023c7dab0c005665b537f6eae2289d"
       define_method(:install) do
         bin.install "scrobble"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tommyokeefe/cli-scrobbler/releases/download/0.2.1/scrobble_0.2.1_linux_arm64.tar.gz"
-      sha256 "4367c1a408f9b1a895d787b0271d6f4279ebcc6a42ab75665bbd7e95a26ca30f"
+      url "https://github.com/tommyokeefe/cli-scrobbler/releases/download/0.3/scrobble_0.3_linux_arm64.tar.gz"
+      sha256 "33a43c8689d4b9e740b092adffb2337c32d9078fd6c773245961c0c319b8783a"
       define_method(:install) do
         bin.install "scrobble"
       end
